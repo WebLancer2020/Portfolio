@@ -1,0 +1,72 @@
+<!-- pricing.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pricing — Jammish</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>:root{--brand-pink:#FF4DA6;--brand-purple:#6B33FF;--muted:#6B7280;} .font-display{ font-family: 'Poppins', system-ui, sans-serif; }</style>
+</head>
+<body class="font-body bg-white text-gray-900 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/60 backdrop-blur-sm">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a class="flex items-center gap-3" href="index.html">
+        <div class="h-10 w-10 rounded-full bg-gradient-to-br from-[var(--brand-pink)] to-[var(--brand-purple)] flex items-center justify-center text-white font-display">J</div>
+        <span class="font-display text-lg">Jammish</span>
+      </a>
+      <div class="hidden md:flex gap-6 items-center text-sm">
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div><a href="contact.html" class="rounded-full bg-[var(--brand-purple)] text-white px-4 py-2 text-sm font-semibold shadow">Get early access</a></div>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-display font-extrabold">Pricing</h1>
+    <p class="mt-3 text-[var(--muted)] max-w-2xl">Simple plans for individuals and teams. No surprises — upgrade or cancel anytime.</p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="rounded-2xl p-6 border shadow-sm">
+        <div class="text-sm font-semibold">Starter</div>
+        <div class="mt-4 text-3xl font-bold">Free</div>
+        <p class="mt-2 text-sm text-[var(--muted)]">Basic visualizers & playlists. Good for trying the vibe.</p>
+        <ul class="mt-4 text-sm space-y-2 text-[var(--muted)]">
+          <li>• Basic visualizers</li>
+          <li>• 3 playlists</li>
+        </ul>
+        <div class="mt-6"><a class="inline-block w-full text-center rounded-full border px-4 py-2" href="#">Get started</a></div>
+      </div>
+
+      <div class="rounded-2xl p-6 bg-gradient-to-br from-[var(--brand-pink)] to-[var(--brand-purple)] text-white shadow-lg">
+        <div class="text-sm font-semibold">Pro</div>
+        <div class="mt-4 text-3xl font-bold">$9 / month</div>
+        <p class="mt-2 text-sm">All visualizers, live collabs, priority support.</p>
+        <ul class="mt-4 text-sm space-y-2">
+          <li>• Unlimited playlists</li>
+          <li>• Live Collabs</li>
+          <li>• Export visualizers</li>
+        </ul>
+        <div class="mt-6"><a class="inline-block w-full text-center rounded-full bg-white/95 text-[var(--brand-purple)] px-4 py-2 font-semibold" href="#">Start free trial</a></div>
+      </div>
+
+      <div class="rounded-2xl p-6 border shadow-sm">
+        <div class="text-sm font-semibold">Team</div>
+        <div class="mt-4 text-3xl font-bold">$29 / month</div>
+        <p class="mt-2 text-sm text-[var(--muted)]">Collaboration features for growing teams.</p>
+        <ul class="mt-4 text-sm space-y-2 text-[var(--muted)]">
+          <li>• Team workspaces</li>
+          <li>• Admin controls</li>
+        </ul>
+        <div class="mt-6"><a class="inline-block w-full text-center rounded-full border px-4 py-2" href="#">Contact sales</a></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t py-8 text-center text-sm text-[var(--muted)]">© <span id="yearP"></span> Jammish</footer>
+  <script> document.getElementById('yearP').textContent = new Date().getFullYear(); </script>
+</body>
+</html>

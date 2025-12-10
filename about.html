@@ -1,0 +1,53 @@
+<!-- about.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Jammish</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>:root{--brand-pink:#FF4DA6;--brand-purple:#6B33FF;--muted:#6B7280;}.font-display{ font-family: 'Poppins', system-ui, sans-serif; }</style>
+</head>
+<body class="font-body bg-white text-gray-900 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/60 backdrop-blur-sm">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a class="flex items-center gap-3" href="index.html">
+        <div class="h-10 w-10 rounded-full bg-gradient-to-br from-[var(--brand-pink)] to-[var(--brand-purple)] flex items-center justify-center text-white font-display">J</div>
+        <span class="font-display text-lg">Jammish</span>
+      </a>
+      <div class="hidden md:flex gap-6 items-center text-sm">
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div><a href="contact.html" class="rounded-full bg-[var(--brand-purple)] text-white px-4 py-2 text-sm font-semibold shadow">Get early access</a></div>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-display font-extrabold">About Jammish</h1>
+    <p class="mt-4 text-[var(--muted)] max-w-2xl">Built by a small team of designers and engineers who love music and delightful interactions. Our mission: make sound visible and exploration fun.</p>
+
+    <section class="mt-10 grid md:grid-cols-3 gap-6">
+      <div class="rounded-2xl bg-white p-6 shadow">
+        <h3 class="font-semibold">Our Story</h3>
+        <p class="mt-2 text-sm text-[var(--muted)]">We started as friends iterating on playlists — now we build tools that make music playful again.</p>
+      </div>
+
+      <div class="rounded-2xl bg-white p-6 shadow">
+        <h3 class="font-semibold">Team</h3>
+        <p class="mt-2 text-sm text-[var(--muted)]">Designers, devs, and audio nerds. Remote-first, timezone-friendly.</p>
+      </div>
+
+      <div class="rounded-2xl bg-white p-6 shadow">
+        <h3 class="font-semibold">Values</h3>
+        <p class="mt-2 text-sm text-[var(--muted)]">Delight-first design, performance, and accessibility.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t py-8 text-center text-sm text-[var(--muted)]">© <span id="yearA"></span> Jammish</footer>
+  <script> document.getElementById('yearA').textContent = new Date().getFullYear(); </script>
+</body>
+</html>
